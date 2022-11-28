@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 32px;
 
   strong {
     color: #fff;
@@ -23,4 +23,10 @@
   align-items: center;
 
   gap: 60px;
+}
+
+.loading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
 }

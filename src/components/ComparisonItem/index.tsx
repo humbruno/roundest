@@ -4,17 +4,20 @@ import styles from './styles.module.scss';
 
 interface ComparisonItemProps {
   content: any;
+  onClick: any;
 }
 
-const ComparisonItem = ({ content }: ComparisonItemProps) => {
+const ComparisonItem = ({ content, onClick }: ComparisonItemProps) => {
   return (
     <div className={styles.placeholder}>
-      <img
-        className={styles.image}
+      <Image
+        width="200"
+        height="200"
         src={content.sprites.front_default}
         alt=""
       />
-      <h2>{content.name}</h2>
+      <h2 className={styles.pokemonName}>{content.name}</h2>
+      <button onClick={onClick}>Rounder</button>
     </div>
   );
 };
