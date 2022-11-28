@@ -1,3 +1,4 @@
+import Button from 'components/Button';
 import Image from 'next/image';
 import React from 'react';
 import styles from './styles.module.scss';
@@ -9,7 +10,7 @@ interface ComparisonItemProps {
 
 const ComparisonItem = ({ content, onClick }: ComparisonItemProps) => {
   return (
-    <div className={styles.placeholder}>
+    <div className={styles.container}>
       <Image
         width="200"
         height="200"
@@ -17,7 +18,7 @@ const ComparisonItem = ({ content, onClick }: ComparisonItemProps) => {
         alt=""
       />
       <h2 className={styles.pokemonName}>{content.name}</h2>
-      <button onClick={onClick}>Rounder</button>
+      <Button onClick={onClick}>Rounder</Button>
     </div>
   );
 };
