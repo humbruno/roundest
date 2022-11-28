@@ -3,3 +3,12 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 80px;
+}
