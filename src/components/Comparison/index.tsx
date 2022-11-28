@@ -26,11 +26,9 @@ const Comparison = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.comparison}>
-          <ComparisonItem content={first} onClick={voteForRoundest} />
-          <strong>or</strong>
-          <ComparisonItem content={second} onClick={voteForRoundest} />
-        </div>
+        <ComparisonItem content={first} onClick={voteForRoundest} />
+        <strong>or</strong>
+        <ComparisonItem content={second} onClick={voteForRoundest} />
       </div>
     </>
   );
